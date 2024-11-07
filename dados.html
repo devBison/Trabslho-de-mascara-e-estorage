@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Recebidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        
+        <label for="">CEP: </label>
+        <div id="recebeCep" class="quadrado"></div>
+
+        <label for="">CPF: </label>
+        <div id="recebeCpf" class="quadrado"></div>
+
+        <label for="">telefone: </label>
+        <div id="recebeTel" class="quadrado"></div>
+
+        <label for="">CNPJ: </label>
+        <div id="recebeCnpj" class="quadrado"></div>
+
+        <label for="">codigo: </label>
+        <div id="recebeCod" class="quadrado"></div>
+
+        <a href="index.html">
+            Voltar
+        </a>
+    </form>
+    
+
+    <script>
+        addEventListener("DOMContentLoaded", () => {
+            document.getElementById("recebeCep").innerHTML = localStorage.getItem("cep");
+            document.getElementById("recebeCpf").innerHTML = localStorage.getItem("cpf");   
+            document.getElementById("recebeTel").innerHTML = localStorage.getItem("telefone");
+            document.getElementById("recebeCnpj").innerHTML = localStorage.getItem("cnpj");
+            document.getElementById("recebeCod").innerHTML = localStorage.getItem("cod");
+        });
+    </script>
+</body>
+</html>

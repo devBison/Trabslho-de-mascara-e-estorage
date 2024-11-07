@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="istyle.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <main>
+
+    <div class="formularioContato">
+
+        <div id="contat"><h1>FORMULARIO</h1></div>
+
+        <form action="dados.html" onsubmit="FuncaoLocalStorage()">
+
+            <label>
+                <label>CEP</label>
+                <input type="text" id="cep" placeholder="xx.xxx-xxx" oninput=mascara_cep() maxlength="10">
+            </label>
+
+            
+            <label>
+                <label>cpf</label>
+                <input type="text" id="cpf" placeholder=" xxx.xxx.xxx-xx" oninput=mascara_cpf() maxlength="14">
+            </label>
+
+
+            <label>
+                <label>telefone</label>
+                <input type="tel" placeholder="(31)99999-9999" id="telefone"  oninput=mascara_telefone() maxlength="14">
+            </label>
+            
+            <label>
+                <label>CNPJ</label>
+                <input type="text" id="cnpj" placeholder="  XX.XXX.XXX/0001-XX" oninput=mascara_cnpj() maxlength="18">
+            </label>
+
+            <label>
+                <label>codigo</label>
+                <input type="text" id="cod" placeholder=" xx_xx//xxx-xxx.9.xxx" oninput=mascara_cod() maxlength="20">
+            </label>
+           
+           <input type="submit" value="Enviar">
+        
+        </form>
+    </div>
+
+    </main>
+  
+    <script src="script.js"> </script>
+</body>
+</html>
